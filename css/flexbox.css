@@ -4,7 +4,10 @@
     flex-direction: column; Se ubican uno encima del otro, en forma de columna */ 
     /* flex-wrap: nowrap; Con esta propiedad ningun elemento cae cuando llega el final del sitio. */
     flex-wrap: wrap; /* Con esta propiedad al achicar la ventana los elementos caen y se amoldan. */
-
+    /* justify-content: start, end, center; Asi puedo justificar el contenido orientandolo de manera HORIZONTAL.
+       justify-content: space-between, space-evenly, space-around; Distintos espaciados que pueden tener los elementos de manera HORIZONTAL. */ 
+    /* align-items: flex-start, flex-end, center, etc; /* Poder centrar los elementos de manera VERTICAL
+       SI EL FLEX-DIRECTION ES COLUMN, EL JUSTIFY Y EL ALIGN SE INVIERTEN. */ 
 }
 
 .box {
@@ -14,4 +17,5 @@
     flex-shrink: 0; /* Esta propiedad sirve para que los elementos mantengan su tamaño aunque se achique la pantalla.
                        0 es para que no se "encogible", mantenga su tamaño
                        1 para que sea encogible y se deforme. */ 
+    /* align-self: flex-end; Se utiliza para modificar la alineacion de un objeto HIJO independiente en la jerarquia.  */
 }
