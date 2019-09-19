@@ -1,0 +1,17 @@
+.flexbox {
+    display: flex; /* Configuramos el display en Flex para el contenedor de los elementos (al padre) */
+    flex-direction: row; /* Asi cada elemento se ubica de manera horizontal, uno al lado del otro. 
+    flex-direction: column; Se ubican uno encima del otro, en forma de columna */ 
+    /* flex-wrap: nowrap; Con esta propiedad ningun elemento cae cuando llega el final del sitio. */
+    flex-wrap: wrap; /* Con esta propiedad al achicar la ventana los elementos caen y se amoldan. */
+
+}
+
+.box {
+    border: 1px solid orange;
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0; /* Esta propiedad sirve para que los elementos mantengan su tamaño aunque se achique la pantalla.
+                       0 es para que no se "encogible", mantenga su tamaño
+                       1 para que sea encogible y se deforme. */ 
+}
